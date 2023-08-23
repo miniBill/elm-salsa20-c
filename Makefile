@@ -1,5 +1,5 @@
 GCC = gcc
 
-out/test: $(wildcard src/*.c src/*h)
+out/test: $(wildcard c-src/*.c c-src/*h)
 	mkdir -p $(dir $@)
-	${GCC} -o $@ $(wildcard src/*.c)
+	${GCC} -o $@ $(wildcard c-src/*.c)
